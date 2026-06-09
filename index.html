@@ -1,226 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akeima King | Training Specialist & ESL Educator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akeima King | Learning & Development Professional</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f7f5f2;
-    color: #111;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f5f2;
+      color: #111;
+      line-height: 1.6;
+    }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background: #fff;
-    border-bottom: 1px solid #e5e5e5;
-}
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+    }
 
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-}
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      line-height: 1.1;
+    }
 
-.hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: #ffffff;
-}
+    .tagline {
+      font-weight: 600;
+      font-size: 18px;
+    }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-}
+    .hero {
+      text-align: center;
+      padding: 120px 30px;
+      background: #fff;
+    }
 
-.hero p {
-    font-size: 18px;
-    color: #555;
-}
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
 
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 28px;
-    border: 1px solid #c9a84e;
-    color: #c9a84e;
-    text-decoration: none;
-    font-weight: 500;
-}
+    h1 {
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
 
-.btn:hover {
-    background: #c9a84e;
-    color: white;
-}
+    .hero p {
+      font-size: 22px;
+      color: #555;
+      max-width: 760px;
+      margin: 0 auto 36px;
+    }
 
-.section {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
-}
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      border: 1px solid #bfa85a;
+      color: #bfa85a;
+      text-decoration: none;
+      font-weight: 700;
+    }
 
-.section h2 {
-    font-family: 'Playfair Display', serif;
-    border-bottom: 1px solid #c9a84e;
-    display: inline-block;
-    margin-bottom: 20px;
-}
+    section {
+      padding: 70px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-.text {
-    line-height: 1.7;
-}
+    h2 {
+      font-size: 36px;
+      border-bottom: 2px solid #bfa85a;
+      display: inline-block;
+      margin-bottom: 32px;
+    }
 
-.cards {
-    display: grid;
-    gap: 20px;
-}
+    .text {
+      font-size: 21px;
+      max-width: 850px;
+    }
 
-.card {
-    background: #fff;
-    padding: 25px;
-    border-left: 4px solid #c9a84e;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
 
-.skills span {
-    display: inline-block;
-    margin: 5px;
-    padding: 8px 12px;
-    border: 1px solid #111;
-    font-size: 13px;
-}
+    .card {
+      background: #fff;
+      padding: 34px;
+      border-left: 6px solid #bfa85a;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
 
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-</style>
+    .card h3 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 18px;
+    }
+
+    .expertise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .expertise span {
+      border: 1px solid #111;
+      padding: 10px 18px;
+      background: #fff;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      font-size: 18px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        padding: 20px;
+        align-items: flex-start;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero {
+        padding: 90px 24px;
+      }
+
+      section {
+        padding: 55px 28px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="nav">
-    <div class="logo">Akeima King</div>
-    <div>Training • ESL • Learning Strategy</div>
-</div>
+  <div class="nav">
+    <div class="name">Akeima<br>King</div>
+    <div class="tagline">Learning & Development • Training Operations • Workforce Development</div>
+  </div>
 
-<div class="hero">
-    <h1>Training Specialist & ESL Educator</h1>
-    <p>Designing learning experiences that improve performance, clarity, and confidence.</p>
+  <div class="hero">
+    <h1>Learning & Development Professional</h1>
+    <p>Designing, managing, and improving workforce learning programs that strengthen performance, compliance, and employee success.</p>
+    <a class="button" href="#portfolio">View Portfolio</a>
+    <a class="button" href="mailto:AkeimaKing@gmail.com">Discuss a Training Project</a>
+  </div>
 
-    <!-- 🔑 REPLACE THIS LINK WITH YOUR CALENDLY -->
-    <a href="https://calendly.com/YOUR-LINK" class="btn" target="_blank">Book ESL Session</a>
-
-    <a href="mailto:your-email@example.com" class="btn">Hire for Training Projects</a>
-</div>
-
-<div class="section">
+  <section>
     <h2>About</h2>
     <p class="text">
-        Training & Development professional with 15+ years of experience evaluating,
-        designing, and improving learning programs in complex environments.
-        <br><br>
-        Specialized in instructional design, training evaluation, and adult learning strategy.
-        <br><br>
-        Also providing ESL instruction for adult learners focused on real-world communication.
+      Learning and Development professional with more than 20 years of experience supporting workforce training, learning operations, curriculum management, employee development, and performance improvement initiatives within complex federal environments.
+      <br><br>
+      Experienced in training administration, instructional design, learning evaluation, LMS coordination, stakeholder collaboration, onboarding, adult learning strategy, and enterprise training operations.
+      <br><br>
+      Known for creating structured learning pathways, improving learner experiences, supporting compliance training, and translating organizational needs into clear, practical learning solutions.
     </p>
-</div>
+  </section>
 
-<div class="section">
+  <section>
     <h2>Services</h2>
-
     <div class="cards">
-        <div class="card">
-            <h3>ESL Instruction</h3>
-            <p>Private English sessions focused on conversation, business English, and confidence.</p>
-        </div>
+      <div class="card">
+        <h3>Learning Operations</h3>
+        <p>Training logistics, enrollment coordination, LMS support, compliance tracking, learner communication, and program administration.</p>
+      </div>
 
-        <div class="card">
-            <h3>Instructional Design</h3>
-            <p>Structured training content, curriculum, and learning systems.</p>
-        </div>
+      <div class="card">
+        <h3>Training Program Management</h3>
+        <p>Planning and supporting learning initiatives from intake through delivery, reporting, evaluation, and continuous improvement.</p>
+      </div>
 
-        <div class="card">
-            <h3>Training Evaluation</h3>
-            <p>Assessing and improving training effectiveness and learning outcomes.</p>
-        </div>
+      <div class="card">
+        <h3>Curriculum Development</h3>
+        <p>Structured training content, learning pathways, job aids, facilitator guides, onboarding resources, and employee development materials.</p>
+      </div>
+
+      <div class="card">
+        <h3>Training Evaluation</h3>
+        <p>Assessment of training effectiveness, learner feedback, knowledge transfer, program alignment, and learning outcomes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Instructional Design</h3>
+        <p>Learning solutions designed using adult learning principles, ADDIE-based planning, and performance-focused training design.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI in Learning</h3>
+        <p>Using AI tools to support training content development, learner support, workflow improvement, and modern learning strategy.</p>
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- 🔥 PORTFOLIO SECTION -->
-<div class="section">
+  <section id="portfolio">
     <h2>Portfolio</h2>
-
     <div class="cards">
+      <div class="card">
+        <h3>Enterprise Training Administration</h3>
+        <p>Coordinated large-scale training programs across multiple business units, including schedules, enrollments, records, reporting, and learner support.</p>
+      </div>
 
-        <div class="card">
-            <h3>Enterprise Training Evaluation</h3>
-            <p>
-                Evaluated large-scale training programs for clarity, effectiveness, and alignment
-                with workforce goals across multiple departments.
-            </p>
-        </div>
+      <div class="card">
+        <h3>Learning Pathway Development</h3>
+        <p>Designed structured learning paths to support onboarding, skill progression, employee development, and workplace performance.</p>
+      </div>
 
-        <div class="card">
-            <h3>Curriculum Development Framework</h3>
-            <p>
-                Designed structured learning paths and curriculum aligned with adult learning
-                principles and organizational needs.
-            </p>
-        </div>
+      <div class="card">
+        <h3>Training Evaluation Framework</h3>
+        <p>Supported evaluation of training programs for clarity, effectiveness, knowledge transfer, learner satisfaction, and organizational alignment.</p>
+      </div>
 
-        <div class="card">
-            <h3>Learning Experience Design</h3>
-            <p>
-                Created learner-centered training navigation systems and onboarding experiences
-                to improve usability and engagement.
-            </p>
-        </div>
+      <div class="card">
+        <h3>Workforce Learning Communications</h3>
+        <p>Created learning communications, orientation resources, and employee support materials to increase training awareness and participation.</p>
+      </div>
 
-        <div class="card">
-            <h3>ESL Learning Sessions</h3>
-            <p>
-                Developed and delivered English learning sessions focused on real-world
-                communication and confidence-building for adult learners.
-            </p>
-        </div>
+      <div class="card">
+        <h3>Instructor-Led Training</h3>
+        <p>Facilitated adult learning programs focused on writing, workplace communication, professional development, and practical skill-building.</p>
+      </div>
 
+      <div class="card">
+        <h3>On-the-Job Training Support</h3>
+        <p>Provided real-time employee guidance, new hire support, POS system instruction, and workplace coaching in fast-paced service environments.</p>
+      </div>
     </div>
-</div>
+  </section>
 
-<div class="section">
+  <section>
     <h2>Core Expertise</h2>
-    <div class="skills">
-        <span>Instructional Design</span>
-        <span>Training Evaluation</span>
-        <span>Adult Learning</span>
-        <span>Curriculum Development</span>
-        <span>ESL Teaching</span>
-        <span>LMS</span>
-        <span>Learning Analysis</span>
-        <span>AI in Learning</span>
+    <div class="expertise">
+      <span>Learning & Development</span>
+      <span>Training Operations</span>
+      <span>Training Administration</span>
+      <span>Instructional Design</span>
+      <span>Curriculum Development</span>
+      <span>Adult Learning</span>
+      <span>LMS Coordination</span>
+      <span>Training Evaluation</span>
+      <span>Workforce Development</span>
+      <span>Learning Analytics</span>
+      <span>Facilitation</span>
+      <span>Onboarding</span>
+      <span>Performance Improvement</span>
+      <span>Stakeholder Engagement</span>
+      <span>AI in Learning</span>
     </div>
-</div>
+  </section>
 
-<div class="section">
+  <section>
     <h2>Contact</h2>
     <p class="text">
-        Email: your-email@example.com<br>
-        Phone: (904) 635-2204
+      Email: <a href="mailto:AkeimaKing@gmail.com">AkeimaKing@gmail.com</a>
     </p>
-</div>
+  </section>
 
-<div class="footer">
+  <footer>
     © 2026 Akeima King
-</div>
+  </footer>
 
 </body>
-</html>
+</html
